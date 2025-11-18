@@ -5,7 +5,7 @@ import sentry_sdk
 from contextlib import asynccontextmanager
 
 from src.config import settings
-from src.api import content, analytics, campaigns, social_accounts
+from src.api import content, analytics, campaigns, social_accounts, auth, payments
 
 
 @asynccontextmanager
@@ -57,6 +57,8 @@ async def health_check():
 
 
 # Include routers
+app.include_router(auth.router, prefix=f"/api/{settings.api_version}/auth", tags=["Authentication"])
+app.include_router(payments.router, prefix=f"/api/{settings.api_version}/payments", tags=["Payments"])
 app.include_router(content.router, prefix=f"/api/{settings.api_version}/content", tags=["Content"])
 app.include_router(analytics.router, prefix=f"/api/{settings.api_version}/analytics", tags=["Analytics"])
 app.include_router(campaigns.router, prefix=f"/api/{settings.api_version}/campaigns", tags=["Campaigns"])
