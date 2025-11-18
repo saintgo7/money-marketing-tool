@@ -4,6 +4,13 @@ An intelligent, all-in-one marketing automation SaaS platform that leverages AI 
 
 ## Features
 
+### 🔐 Authentication & User Management
+- **Secure Authentication**: JWT-based authentication with bcrypt password hashing
+- **User Registration**: Easy signup process with email verification
+- **Multi-Tier Subscriptions**: Free, Starter, Pro, and Agency tiers
+- **Usage Tracking**: Real-time tracking of AI generations and resource usage
+- **Profile Management**: Update user information and preferences
+
 ### AI Content Generation
 - **Multi-Platform Content**: Generate platform-optimized content for Instagram, Facebook, Twitter, LinkedIn, TikTok, and more
 - **Powered by Claude AI**: Uses Claude Sonnet 4.5 for high-quality, engaging content
@@ -11,6 +18,7 @@ An intelligent, all-in-one marketing automation SaaS platform that leverages AI 
 - **Ad Copy Generation**: Generate multiple ad copy variants for performance testing
 - **Content Optimization**: Optimize existing content for better engagement
 - **Content Ideas**: AI-generated content ideas based on trends and industry
+- **Interactive UI**: Beautiful content creation interface with live preview
 
 ### Media Generation
 - **AI Image Generation**: Create marketing images using Stable Diffusion XL
@@ -32,6 +40,12 @@ An intelligent, all-in-one marketing automation SaaS platform that leverages AI 
 - **Trend Analysis**: Identify content patterns that drive engagement
 - **Competitive Analysis**: Benchmark against industry standards
 
+### 💳 Payment & Billing
+- **Stripe Integration**: Secure payment processing
+- **Subscription Management**: Easy upgrade/downgrade between tiers
+- **Usage-Based Billing**: Track and manage API usage
+- **Webhook Support**: Real-time payment status updates
+
 ### Multi-Platform Support
 - Instagram (Feed, Stories, Reels, Carousel)
 - Facebook (Posts, Pages, Groups)
@@ -45,11 +59,14 @@ An intelligent, all-in-one marketing automation SaaS platform that leverages AI 
 
 ### Backend
 - **Framework**: FastAPI (Python 3.11+)
+- **Authentication**: JWT with OAuth2, Passlib (bcrypt)
 - **AI**: Anthropic Claude API, Stable Diffusion XL
-- **Database**: PostgreSQL with SQLAlchemy ORM
+- **Database**: PostgreSQL with SQLAlchemy ORM, Alembic migrations
 - **Task Queue**: Celery with Redis
 - **Caching**: Redis
+- **Payment**: Stripe API
 - **Analytics**: Pandas, NumPy
+- **Testing**: Pytest with coverage
 
 ### Frontend
 - **Framework**: Next.js 14 (React 18)
@@ -90,7 +107,13 @@ Edit `.env` and add your API keys:
 - Email service credentials
 - Stripe keys for payments
 
-3. **Start with Docker Compose**
+3. **Quick Setup (Automated)**
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+Or manually with Docker Compose:
 ```bash
 docker-compose up -d
 ```
@@ -106,16 +129,27 @@ This will start:
 
 4. **Initialize the database**
 ```bash
-docker-compose exec backend python -c "from src.models.database import init_db; init_db()"
+docker-compose exec backend python scripts/init_db.py
 ```
 
-5. **Access the application**
+5. **Create an admin user**
+```bash
+docker-compose exec backend python scripts/create_admin.py
+```
+
+6. **Access the application**
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:8000
 - API Docs: http://localhost:8000/docs
 - Flower (Celery monitoring): http://localhost:5555
 
 ## Development Setup
+
+### Quick Dev Setup (Automated)
+```bash
+chmod +x dev-setup.sh
+./dev-setup.sh
+```
 
 ### Backend Development
 
@@ -131,6 +165,12 @@ pip install -r requirements.txt
 
 # Copy environment file
 cp .env.example .env
+
+# Initialize database
+python scripts/init_db.py
+
+# Create admin user
+python scripts/create_admin.py
 
 # Run database migrations
 alembic upgrade head
@@ -161,6 +201,17 @@ npm run dev
 ```
 
 Visit http://localhost:3000
+
+### Running Tests
+
+```bash
+# Backend tests
+cd backend
+pytest
+
+# With coverage report
+pytest --cov=src --cov-report=html
+```
 
 ## API Documentation
 
