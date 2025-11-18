@@ -5,7 +5,13 @@ import sentry_sdk
 from contextlib import asynccontextmanager
 
 from src.config import settings
-from src.api import content, analytics, campaigns, social_accounts, auth, payments
+from src.api import content, analytics, campaigns, social_accounts, auth, payments, monitoring
+from src.utils.middleware import (
+    LoggingMiddleware,
+    ErrorHandlingMiddleware,
+    RateLimitMiddleware,
+    CORSHeadersMiddleware
+)
 
 
 @asynccontextmanager
@@ -37,6 +43,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Custom middleware
+app.add_middleware(CORSHeadersMiddleware)
+app.add_middleware(ErrorHandlingMiddleware)
+app.add_middleware(LoggingMiddleware)
+app.add_middleware(RateLimitMiddleware, max_requests=100, window=60)
+
 
 @app.get("/")
 async def root():
@@ -57,6 +69,7 @@ async def health_check():
 
 
 # Include routers
+app.include_router(monitoring.router, prefix="/health", tags=["Monitoring"])
 app.include_router(auth.router, prefix=f"/api/{settings.api_version}/auth", tags=["Authentication"])
 app.include_router(payments.router, prefix=f"/api/{settings.api_version}/payments", tags=["Payments"])
 app.include_router(content.router, prefix=f"/api/{settings.api_version}/content", tags=["Content"])
