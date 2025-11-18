@@ -1,0 +1,248 @@
+{
+  "common": {
+    "appName": "머니 마케팅 툴",
+    "slogan": "AI 기반 마케팅 자동화 플랫폼",
+    "getStarted": "시작하기",
+    "learnMore": "더 알아보기",
+    "login": "로그인",
+    "signup": "회원가입",
+    "logout": "로그아웃",
+    "save": "저장",
+    "cancel": "취소",
+    "delete": "삭제",
+    "edit": "수정",
+    "create": "생성",
+    "loading": "로딩 중...",
+    "error": "오류",
+    "success": "성공",
+    "dashboard": "대시보드",
+    "settings": "설정"
+  },
+  "nav": {
+    "dashboard": "대시보드",
+    "create": "콘텐츠 생성",
+    "scheduler": "스케줄러",
+    "campaigns": "캠페인",
+    "accounts": "소셜 계정",
+    "analytics": "분석",
+    "settings": "설정"
+  },
+  "home": {
+    "hero": {
+      "title": "AI가 만드는",
+      "titleHighlight": "자동 마케팅",
+      "description": "Claude AI로 콘텐츠를 생성하고, 최적의 시간에 자동으로 게시하세요. 데이터 기반 인사이트로 마케팅 성과를 극대화하세요.",
+      "startFreeTrial": "무료로 시작하기",
+      "viewDemo": "데모 보기"
+    },
+    "features": {
+      "title": "강력한 기능",
+      "aiContent": {
+        "title": "AI 콘텐츠 생성",
+        "description": "Claude Sonnet 4.5로 플랫폼별 최적화된 콘텐츠를 자동 생성합니다."
+      },
+      "multiPlatform": {
+        "title": "멀티 플랫폼 게시",
+        "description": "Instagram, Facebook, Twitter, LinkedIn, TikTok에 동시 게시하세요."
+      },
+      "smartScheduling": {
+        "title": "스마트 스케줄링",
+        "description": "과거 데이터 분석으로 최적의 게시 시간을 자동으로 찾아줍니다."
+      },
+      "analytics": {
+        "title": "실시간 분석",
+        "description": "상세한 성과 분석과 인사이트로 마케팅 전략을 최적화하세요."
+      }
+    },
+    "pricing": {
+      "title": "합리적인 가격",
+      "subtitle": "모든 규모의 비즈니스를 위한 플랜",
+      "free": {
+        "name": "무료",
+        "price": "₩0",
+        "period": "/월",
+        "features": [
+          "월 10개 AI 콘텐츠",
+          "2개 소셜 계정",
+          "기본 분석",
+          "커뮤니티 지원"
+        ]
+      },
+      "starter": {
+        "name": "스타터",
+        "price": "₩29,000",
+        "period": "/월",
+        "features": [
+          "월 100개 AI 콘텐츠",
+          "5개 소셜 계정",
+          "고급 분석",
+          "스마트 스케줄링",
+          "이메일 지원"
+        ],
+        "popular": true
+      },
+      "pro": {
+        "name": "프로",
+        "price": "₩79,000",
+        "period": "/월",
+        "features": [
+          "무제한 AI 콘텐츠",
+          "15개 소셜 계정",
+          "프리미엄 분석",
+          "A/B 테스팅",
+          "우선 지원",
+          "커스텀 브랜드 보이스"
+        ]
+      },
+      "agency": {
+        "name": "에이전시",
+        "price": "₩199,000",
+        "period": "/월",
+        "features": [
+          "무제한 모든 기능",
+          "무제한 소셜 계정",
+          "화이트라벨",
+          "팀 협업 도구",
+          "전담 계정 매니저",
+          "API 액세스"
+        ]
+      },
+      "selectPlan": "플랜 선택"
+    },
+    "cta": {
+      "title": "오늘부터 마케팅 자동화를 시작하세요",
+      "description": "신용카드 없이 무료로 시작할 수 있습니다. 언제든지 업그레이드 가능합니다.",
+      "button": "무료로 시작하기"
+    }
+  },
+  "auth": {
+    "loginTitle": "계정에 로그인",
+    "signupTitle": "새 계정 만들기",
+    "email": "이메일",
+    "password": "비밀번호",
+    "confirmPassword": "비밀번호 확인",
+    "fullName": "이름",
+    "rememberMe": "로그인 상태 유지",
+    "forgotPassword": "비밀번호를 잊으셨나요?",
+    "noAccount": "계정이 없으신가요?",
+    "hasAccount": "이미 계정이 있으신가요?",
+    "signupLink": "회원가입",
+    "loginLink": "로그인"
+  },
+  "dashboard": {
+    "title": "대시보드",
+    "welcome": "환영합니다",
+    "overview": "개요",
+    "stats": {
+      "totalPosts": "총 게시물",
+      "engagement": "참여율",
+      "reach": "도달 수",
+      "clicks": "클릭 수"
+    },
+    "recentPosts": "최근 게시물",
+    "topPerforming": "인기 콘텐츠",
+    "upcomingPosts": "예정된 게시물"
+  },
+  "create": {
+    "title": "AI 콘텐츠 생성",
+    "topic": "주제",
+    "topicPlaceholder": "콘텐츠 주제를 입력하세요...",
+    "platforms": "플랫폼 선택",
+    "tone": "톤",
+    "tones": {
+      "professional": "전문적",
+      "casual": "캐주얼",
+      "friendly": "친근한",
+      "formal": "격식있는",
+      "humorous": "유머러스"
+    },
+    "targetAudience": "타겟 오디언스",
+    "keywords": "키워드 (쉼표로 구분)",
+    "generateContent": "콘텐츠 생성",
+    "generating": "생성 중...",
+    "generated": "생성된 콘텐츠",
+    "useContent": "이 콘텐츠 사용",
+    "regenerate": "다시 생성"
+  },
+  "scheduler": {
+    "title": "스케줄러",
+    "schedulePost": "게시물 예약",
+    "viewList": "목록 보기",
+    "viewCalendar": "달력 보기",
+    "filterByPlatform": "플랫폼 필터",
+    "filterByStatus": "상태 필터",
+    "status": {
+      "scheduled": "예약됨",
+      "published": "게시됨",
+      "failed": "실패",
+      "draft": "임시저장"
+    },
+    "scheduledFor": "예약 시간",
+    "publishNow": "지금 게시",
+    "deletePost": "게시물 삭제"
+  },
+  "campaigns": {
+    "title": "캠페인 관리",
+    "createCampaign": "캠페인 만들기",
+    "campaignName": "캠페인 이름",
+    "campaignStatus": "상태",
+    "status": {
+      "active": "활성",
+      "paused": "일시중지",
+      "completed": "완료"
+    },
+    "totalReach": "총 도달 수",
+    "engagement": "참여도",
+    "posts": "게시물",
+    "viewDetails": "상세 보기"
+  },
+  "accounts": {
+    "title": "소셜 계정",
+    "connectAccount": "계정 연결",
+    "connected": "연결됨",
+    "disconnected": "연결 끊김",
+    "connect": "연결",
+    "disconnect": "연결 끊기",
+    "followers": "팔로워",
+    "posts": "게시물"
+  },
+  "analytics": {
+    "title": "분석",
+    "period": "기간",
+    "periods": {
+      "7days": "최근 7일",
+      "30days": "최근 30일",
+      "90days": "최근 90일",
+      "custom": "사용자 지정"
+    },
+    "metrics": {
+      "impressions": "노출 수",
+      "engagementRate": "참여율",
+      "clickThroughRate": "클릭률",
+      "conversions": "전환"
+    },
+    "topPosts": "인기 게시물",
+    "performanceChart": "성과 차트",
+    "audienceInsights": "오디언스 인사이트"
+  },
+  "settings": {
+    "title": "설정",
+    "profile": "프로필",
+    "subscription": "구독",
+    "billing": "결제",
+    "notifications": "알림",
+    "api": "API",
+    "updateProfile": "프로필 업데이트",
+    "changePlan": "플랜 변경",
+    "currentPlan": "현재 플랜",
+    "upgradeNow": "지금 업그레이드"
+  },
+  "errors": {
+    "pageNotFound": "페이지를 찾을 수 없습니다",
+    "somethingWentWrong": "문제가 발생했습니다",
+    "tryAgain": "다시 시도",
+    "goHome": "홈으로 가기",
+    "unauthorized": "권한이 없습니다",
+    "serverError": "서버 오류가 발생했습니다"
+  }
+}

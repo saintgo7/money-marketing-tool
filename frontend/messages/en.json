@@ -1,0 +1,248 @@
+{
+  "common": {
+    "appName": "Money Marketing Tool",
+    "slogan": "AI-Powered Marketing Automation Platform",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "dashboard": "Dashboard",
+    "settings": "Settings"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "create": "Create Content",
+    "scheduler": "Scheduler",
+    "campaigns": "Campaigns",
+    "accounts": "Social Accounts",
+    "analytics": "Analytics",
+    "settings": "Settings"
+  },
+  "home": {
+    "hero": {
+      "title": "AI-Powered",
+      "titleHighlight": "Marketing Automation",
+      "description": "Generate content with Claude AI and auto-publish at optimal times. Maximize your marketing performance with data-driven insights.",
+      "startFreeTrial": "Start Free Trial",
+      "viewDemo": "View Demo"
+    },
+    "features": {
+      "title": "Powerful Features",
+      "aiContent": {
+        "title": "AI Content Generation",
+        "description": "Auto-generate platform-optimized content with Claude Sonnet 4.5."
+      },
+      "multiPlatform": {
+        "title": "Multi-Platform Publishing",
+        "description": "Post simultaneously to Instagram, Facebook, Twitter, LinkedIn, and TikTok."
+      },
+      "smartScheduling": {
+        "title": "Smart Scheduling",
+        "description": "Automatically find optimal posting times through historical data analysis."
+      },
+      "analytics": {
+        "title": "Real-time Analytics",
+        "description": "Optimize your marketing strategy with detailed performance analysis and insights."
+      }
+    },
+    "pricing": {
+      "title": "Affordable Pricing",
+      "subtitle": "Plans for businesses of all sizes",
+      "free": {
+        "name": "Free",
+        "price": "$0",
+        "period": "/month",
+        "features": [
+          "10 AI contents per month",
+          "2 social accounts",
+          "Basic analytics",
+          "Community support"
+        ]
+      },
+      "starter": {
+        "name": "Starter",
+        "price": "$29",
+        "period": "/month",
+        "features": [
+          "100 AI contents per month",
+          "5 social accounts",
+          "Advanced analytics",
+          "Smart scheduling",
+          "Email support"
+        ],
+        "popular": true
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$79",
+        "period": "/month",
+        "features": [
+          "Unlimited AI contents",
+          "15 social accounts",
+          "Premium analytics",
+          "A/B testing",
+          "Priority support",
+          "Custom brand voice"
+        ]
+      },
+      "agency": {
+        "name": "Agency",
+        "price": "$199",
+        "period": "/month",
+        "features": [
+          "Unlimited everything",
+          "Unlimited social accounts",
+          "White label",
+          "Team collaboration tools",
+          "Dedicated account manager",
+          "API access"
+        ]
+      },
+      "selectPlan": "Select Plan"
+    },
+    "cta": {
+      "title": "Start Automating Your Marketing Today",
+      "description": "Get started for free without a credit card. Upgrade anytime.",
+      "button": "Start Free Trial"
+    }
+  },
+  "auth": {
+    "loginTitle": "Login to Your Account",
+    "signupTitle": "Create New Account",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "fullName": "Full Name",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "signupLink": "Sign up",
+    "loginLink": "Login"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome",
+    "overview": "Overview",
+    "stats": {
+      "totalPosts": "Total Posts",
+      "engagement": "Engagement Rate",
+      "reach": "Reach",
+      "clicks": "Clicks"
+    },
+    "recentPosts": "Recent Posts",
+    "topPerforming": "Top Performing",
+    "upcomingPosts": "Upcoming Posts"
+  },
+  "create": {
+    "title": "AI Content Generation",
+    "topic": "Topic",
+    "topicPlaceholder": "Enter content topic...",
+    "platforms": "Select Platforms",
+    "tone": "Tone",
+    "tones": {
+      "professional": "Professional",
+      "casual": "Casual",
+      "friendly": "Friendly",
+      "formal": "Formal",
+      "humorous": "Humorous"
+    },
+    "targetAudience": "Target Audience",
+    "keywords": "Keywords (comma-separated)",
+    "generateContent": "Generate Content",
+    "generating": "Generating...",
+    "generated": "Generated Content",
+    "useContent": "Use This Content",
+    "regenerate": "Regenerate"
+  },
+  "scheduler": {
+    "title": "Scheduler",
+    "schedulePost": "Schedule Post",
+    "viewList": "List View",
+    "viewCalendar": "Calendar View",
+    "filterByPlatform": "Filter by Platform",
+    "filterByStatus": "Filter by Status",
+    "status": {
+      "scheduled": "Scheduled",
+      "published": "Published",
+      "failed": "Failed",
+      "draft": "Draft"
+    },
+    "scheduledFor": "Scheduled for",
+    "publishNow": "Publish Now",
+    "deletePost": "Delete Post"
+  },
+  "campaigns": {
+    "title": "Campaign Management",
+    "createCampaign": "Create Campaign",
+    "campaignName": "Campaign Name",
+    "campaignStatus": "Status",
+    "status": {
+      "active": "Active",
+      "paused": "Paused",
+      "completed": "Completed"
+    },
+    "totalReach": "Total Reach",
+    "engagement": "Engagement",
+    "posts": "Posts",
+    "viewDetails": "View Details"
+  },
+  "accounts": {
+    "title": "Social Accounts",
+    "connectAccount": "Connect Account",
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "connect": "Connect",
+    "disconnect": "Disconnect",
+    "followers": "Followers",
+    "posts": "Posts"
+  },
+  "analytics": {
+    "title": "Analytics",
+    "period": "Period",
+    "periods": {
+      "7days": "Last 7 days",
+      "30days": "Last 30 days",
+      "90days": "Last 90 days",
+      "custom": "Custom"
+    },
+    "metrics": {
+      "impressions": "Impressions",
+      "engagementRate": "Engagement Rate",
+      "clickThroughRate": "Click-through Rate",
+      "conversions": "Conversions"
+    },
+    "topPosts": "Top Posts",
+    "performanceChart": "Performance Chart",
+    "audienceInsights": "Audience Insights"
+  },
+  "settings": {
+    "title": "Settings",
+    "profile": "Profile",
+    "subscription": "Subscription",
+    "billing": "Billing",
+    "notifications": "Notifications",
+    "api": "API",
+    "updateProfile": "Update Profile",
+    "changePlan": "Change Plan",
+    "currentPlan": "Current Plan",
+    "upgradeNow": "Upgrade Now"
+  },
+  "errors": {
+    "pageNotFound": "Page Not Found",
+    "somethingWentWrong": "Something went wrong",
+    "tryAgain": "Try Again",
+    "goHome": "Go Home",
+    "unauthorized": "Unauthorized",
+    "serverError": "Server error occurred"
+  }
+}
